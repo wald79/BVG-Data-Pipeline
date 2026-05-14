@@ -15,30 +15,31 @@ SQLAlchemy,
 BVG Transport API,
 
 🏗️ Architecture
-stops.txt
+1. stops.txt
+    
+2. extract.py (BVG API)
     ↓
-extract.py (BVG API)
+3. transform.py (clean + structure JSON)
     ↓
-transform.py (clean + structure JSON)
+4. load.py (PostgreSQL)
     ↓
-load.py (PostgreSQL)
-    ↓
-PostgreSQL (Docker container)
+5. PostgreSQL (Docker container)
 
 
 📊 Data Model
 stations table
-column	                    description
-station_id (PK)	            unique station identifier
-station_name	n             ame of station
-ingested_at               	timestamp of ingestion
+1. column	                    description
+2. station_id (PK)	            unique station identifier
+3. station_name	n             ame of station
+4. ingested_at               	timestamp of ingestion
+
 departures table
-column	                   description
-trip_id(PK)	               trip identifier
-station_id	               related station
-delay	                     delay in seconds
-direction	                 route direction
-ingested_at	               timestamp of ingestion
+1. column	                   description
+2. trip_id(PK)	               trip identifier
+3. station_id	               related station
+4. delay	                     delay in seconds
+5. direction	                 route direction
+6. ingested_at	               timestamp of ingestion
 
 
 🚀 How to Run
