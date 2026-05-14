@@ -7,12 +7,12 @@ transforms it into a structured format, and loads it into a PostgreSQL database 
 The pipeline processes multiple station inputs and stores both station metadata and real-time departure information.
 
 ⚙️ Tech Stack
-Python 3
-PostgreSQL
-Docker & Docker Compose
-Pandas
-SQLAlchemy
-BVG Transport API
+Python 3,
+PostgreSQL,
+Docker & Docker Compose,
+Pandas,
+SQLAlchemy,
+BVG Transport API,
 
 🏗️ Architecture
 stops.txt
