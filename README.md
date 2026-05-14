@@ -28,18 +28,18 @@ BVG Transport API,
 
 📊 Data Model
 stations table
-1. column	                    description
-2. station_id (PK)	            unique station identifier
-3. station_name	n             ame of station
-4. ingested_at               	timestamp of ingestion
+1. column	           -         description
+2. station_id (PK)	   -         unique station identifier
+3. station_name	n      -       ame of station
+4. ingested_at         -      	timestamp of ingestion
 
 departures table
-1. column	                   description
-2. trip_id(PK)	               trip identifier
-3. station_id	               related station
-4. delay	                     delay in seconds
-5. direction	                 route direction
-6. ingested_at	               timestamp of ingestion
+1. column	            -       description
+2. trip_id(PK)	        -       trip identifier
+3. station_id	        -       related station
+4. delay	            -         delay in seconds
+5. direction	        -         route direction
+6. ingested_at	        -       timestamp of ingestion
 
 
 🚀 How to Run
